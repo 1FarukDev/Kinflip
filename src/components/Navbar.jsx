@@ -20,8 +20,12 @@ class Navbar extends Component {
               id="navbar"
               className={this.state.clicked ? "#navbar active" : "#navbar"}
             >
-              <div id="search">
+              {/* <div id="search">
                 <input type="search" className="search" placeholder="Search for a Keyword...." /><div className="serach--icon"><i className="fa fa-search"></i></div>
+              </div> */}
+              <div id="search">
+                <div id="search-input"><input type="text" placeholder="Search for a keyword..."/></div>
+                <div id="search-icon"><i className="fa fa-search fa-lg"></i></div>
               </div>
               <li>
                 <a className="active" href="#">
@@ -35,11 +39,21 @@ class Navbar extends Component {
                 <a href="#">About Us</a>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <a href="#" className="news">Newsletter</a>
               </li>
               <li>
                 <a href="#">FAQ</a>
               </li>
+              <li>
+                <a href="#" className="mission">Mission And Vision</a>
+              </li>
+               <div id="socials">
+                <div className="social-icons">
+                  <i className="fa fa-facebook"></i>
+                  <i className="fa fa-github"></i>
+                  <i className="fa fa-twitter"></i>
+                </div>
+               </div>
             </ul>
             <div id="register">
               <div id="nav-attendee">Register As An Attendee</div>
