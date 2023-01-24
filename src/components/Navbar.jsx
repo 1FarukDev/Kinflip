@@ -21,6 +21,9 @@ class Navbar extends Component {
               id="navbar"
               className={this.state.clicked ? "#navbar active" : "#navbar"}
             >
+              <div id="search">
+                <input type="search" className="search"/>fjnfjenfj
+              </div>
               <li>
                 <a className="active" href="#">
                   Home

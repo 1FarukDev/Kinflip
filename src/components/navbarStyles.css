@@ -6,6 +6,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background: blue; */
     background: rgba(0, 0, 0, 1);
     padding: 15px 50px;
 }
@@ -35,6 +36,11 @@ nav{
 #nav-links{
     display: flex;
     justify-content: space-between;
+}
+.search{
+    margin-right: -20px;
+    height: 5vh;
+    border-radius: ;
 }
 #register{
     display: flex;
