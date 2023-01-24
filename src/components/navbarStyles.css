@@ -6,7 +6,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: blue; */
+    background: blue;
     background: rgba(0, 0, 0, 1);
     padding: 15px 50px;
 }
@@ -37,10 +37,43 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.search{
+#search{
+    display: flex;
+    background: black;
+    color: #fff;
     margin-right: -20px;
     height: 5vh;
-    border-radius: ;
+    border-radius: 4px;
+    display: none;
+    border: 1px solid rgba(255, 248, 229, 1);
+    margin-bottom: 1rem;
+  }
+.fa-search{
+    background-color: #FFBC01;
+    border-radius: 0px 4px 4px 0px;
+    padding: .5rem;
+    padding: auto;
+    height: 59%;
+}
+::placeholder{
+    padding-left: 1rem;
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 12px;
+
+}
+.search{
+    background: black;
+    border: 1px solid rgba(255, 248, 229, 1);
+    color: #fff;
+    height: 5vh;
+    align-self: right;
+    /* background: #FFBC01; */
+    display: flex;
 }
 #register{
     display: flex;
@@ -169,5 +202,8 @@ nav{
     }
     #nav-register{
         display: none;
+    }
+    #search{
+        display: flex;
     }
 }

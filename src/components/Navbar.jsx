@@ -1,6 +1,5 @@
 import { Component } from "react";
 import "./navbarStyles.css";
-import logo from "./images/kinlogo.png";
 import kin from './images/kinmain.png'
 class Navbar extends Component {
   state = { clicked: false };
@@ -22,7 +21,7 @@ class Navbar extends Component {
               className={this.state.clicked ? "#navbar active" : "#navbar"}
             >
               <div id="search">
-                <input type="search" className="search"/>fjnfjenfj
+                <input type="search" className="search" placeholder="Search for a Keyword...." /><div className="serach--icon"><i className="fa fa-search"></i></div>
               </div>
               <li>
                 <a className="active" href="#">
