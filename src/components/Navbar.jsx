@@ -1,7 +1,7 @@
 import { Component } from "react";
 import "./navbarStyles.css";
 import kin from './images/kinmain.png'
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaGithub, FaTwitter, FaLinkedin,FaPinterest } from "react-icons/fa";
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -71,10 +71,11 @@ class Navbar extends Component {
               </span>
                <div id="socials">
                 <div className="social-icons">
-                  <div className="instagram"><FaInstagram /></div>
-                  <i className="fa fa-facebook"></i>
-                  <i className="fa fa-github"></i>
-                  <i className="fa fa-twitter"></i>
+                  <div className="instagram"><FaFacebook /></div>
+                  <div className="instagram"><FaTwitter /></div>
+                  <div className="instagram"><FaInstagram  /></div>
+                  <div className="instagram"><FaLinkedin  /></div>
+                  <div className="instagram"><FaPinterest  /></div>
                 </div>
                </div>
             </ul>
