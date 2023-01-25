@@ -27,6 +27,7 @@ class Navbar extends Component {
                 <div id="search-input"><input type="text" placeholder="Search for a keyword..."/></div>
                 <div id="search-icon"><i className="fa fa-search fa-lg"></i></div>
               </div>
+              <span className="mobile-links">
               <li>
                 <a className="active" href="#">
                   Home
@@ -47,6 +48,25 @@ class Navbar extends Component {
               <li>
                 <a href="#" className="mission">Mission And Vision</a>
               </li>
+              </span>
+              <span className="desktop-links">
+              <li>
+                <a className="active" href="#">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              
+              </span>
                <div id="socials">
                 <div className="social-icons">
                   <i className="fa fa-facebook"></i>

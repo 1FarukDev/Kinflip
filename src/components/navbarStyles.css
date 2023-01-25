@@ -18,7 +18,12 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
+.mobile-links{
+  display: none;
+}
+.desktop-links{
+  display: flex;
+}
 #navbar li {
   list-style: none;
   padding: 0 20px;
@@ -200,6 +205,12 @@ input {
   .news, .mission{
     display: block;
 }
+.mobile-links{
+  display: block;
+}
+.desktop-links{
+  display: none;
+}
 }
 @media screen and (max-width: 640px) {
   nav {
@@ -242,6 +253,12 @@ input {
   }
   .news, .mission{
     display: block;
+}
+.mobile-links{
+  display: block;
+}
+.desktop-links{
+  display: none;
 }
 #socials{
     display: flex;
