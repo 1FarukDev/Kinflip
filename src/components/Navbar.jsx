@@ -1,6 +1,8 @@
 import { Component } from "react";
 import "./navbarStyles.css";
 import kin from './images/kinmain.png'
+import { FaInstagram } from "react-icons/fa";
+
 class Navbar extends Component {
   state = { clicked: false };
   handleClick = () => {
@@ -34,16 +36,16 @@ class Navbar extends Component {
                 </a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li>
                 <a href="#" className="news">Newsletter</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="#">About Us</a>
               </li>
               <li>
                 <a href="#" className="mission">Mission And Vision</a>
@@ -69,6 +71,7 @@ class Navbar extends Component {
               </span>
                <div id="socials">
                 <div className="social-icons">
+                  <div className="instagram"><FaInstagram /></div>
                   <i className="fa fa-facebook"></i>
                   <i className="fa fa-github"></i>
                   <i className="fa fa-twitter"></i>
