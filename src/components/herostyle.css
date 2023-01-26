@@ -1,0 +1,38 @@
+section{
+    background: rgba(0, 0, 0, 0.8);
+    /* background: red; */
+    margin: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+#hero{
+    display: flex;
+    padding: 2rem .5rem;
+}
+.hero-text{
+    font-family: 'Lora';
+    font-weight: '200';
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 50%;
+}
+.yellow{
+    color: #ffbc01;
+}
+#register-1{
+    display: flex;
+    margin-top: 1rem;
+}
+.heroimg{
+    display: flex;
+    justify-content: center;
+    align-items: center; display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroimage{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

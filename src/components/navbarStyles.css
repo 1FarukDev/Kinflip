@@ -113,9 +113,7 @@ input {
 } */
 #register {
   display: flex;
-  margin: 0.8rem 2rem;
-  display: none;
-  /* height: 5vh; */
+  /* margin: 0.8rem 0rem; */
 }
 #nav-attendee {
   margin-right: 1rem;
@@ -170,7 +168,7 @@ input {
     right: -400px;
     width: 300px;
     height: 100vh;
-    background: rgba(0, 0, 0, 1);
+    background: #1e1b1b;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
@@ -211,6 +209,21 @@ input {
 .desktop-links{
   display: none;
 }
+#socials{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color: #fff;
+}
+.social-icons{
+display: flex;
+padding: .5rem;
+width: 30%;
+justify-content: space-around;
+}
+
 }
 @media screen and (max-width: 640px) {
   nav {
@@ -222,11 +235,12 @@ input {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 45px;
+    top: 54px;
     right: -400px;
     width: 300px;
     height: 100vh;
-    background: rgba(0, 0, 0, 1);
+    background: #1e1b1b;
+    /* background: rgba(0, 0, 0, 1); */
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
