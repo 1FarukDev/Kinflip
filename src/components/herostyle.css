@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&display=swap');
+
+
 section{
     background: rgba(0, 0, 0, 0.8);
-    /* background: red; */
     margin: 2rem 3rem;
     display: flex;
     flex-direction: column;
@@ -37,6 +39,9 @@ section{
     justify-content: center;
     align-items: center;
 }
+#attendee2{
+    display: none;
+}
 
 @media screen and (max-width: 769px) {
     section{
@@ -60,6 +65,26 @@ section{
     }
   }
   @media screen and (max-width: 640px) {
-   
+    #register-1{
+       display: none;
+    }
+     .hero-text{
+        text-align: center;
+        width: 90%;
+    }
+    #attendee2{
+        display: block;
+        background: #ffbc01;
+        padding: 1rem;
+        border-radius: 4px;
+        margin: 2rem 0;
+        font-style: normal;
+        font-family: 'Lora';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+
+    }
   }
   

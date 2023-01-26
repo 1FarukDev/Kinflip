@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ nav {
   list-style: none;
   padding: 0 20px;
   position: relative;
-  font-family: "Nunito";
+  font-family: "Nunito" ;
   font-style: normal;
   font-weight: 500;
 }

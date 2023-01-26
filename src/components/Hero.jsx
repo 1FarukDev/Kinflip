@@ -24,6 +24,7 @@ export default function Hero() {
               <div id="nav-speaker">Register As A Speaker</div>
             </div>
           </div>
+          <div id="attendee2">Register For Free</div>
           <div className="hero-countdown">
             <img src={hero} alt="" />
           </div>
