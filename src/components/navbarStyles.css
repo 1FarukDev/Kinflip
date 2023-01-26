@@ -223,6 +223,10 @@ padding: .5rem;
 width: 30%;
 justify-content: space-around;
 }
+#register {
+  display: none;
+  /* margin: 0.8rem 0rem; */
+}
 
 }
 @media screen and (max-width: 640px) {
@@ -292,5 +296,9 @@ justify-content: space-around;
   padding: .5rem;
   width: 60%;
   justify-content: space-around;
+}
+#register {
+  display: none;
+  /* margin: 0.8rem 0rem; */
 }
 }
