@@ -23,6 +23,16 @@ export default function About() {
         fashion.<span className="yellow">Read More....</span>
         </div>
       </div>
+
+      <div className="about--count">
+        <div className="speakers"><div className="speakers-number">5</div><p>Speakers</p></div>
+        <div className="speakers"><div className="speakers-number">500</div><p>Attendees</p></div>
+        <div className="speakers"><div className="speakers-number">10</div><p>Courses</p></div>
+        <div className="speakers"><div className="speakers-number">7</div><p>Sessions</p></div>
+        {/* <div className="attendees">safdasf</div>
+        <div className="courses">fsdafaf</div>
+        <div className="sesssions">dafda</div> */}
+      </div>
     </article>
   );
 }

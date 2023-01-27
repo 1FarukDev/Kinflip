@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&family=Nunito:wght@200&display=swap');
 #sponsors--section{
     /* background: red; */
-    margin: 0rem 3rem 1rem 3rem;
+    padding: 0rem 1.5rem 1rem 1.5rem;
 }
 #sponsor--text{
     display: flex;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {  
     #sponsors--section{
         margin: 2rem 0;
     }
