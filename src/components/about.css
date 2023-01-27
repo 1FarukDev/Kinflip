@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&family=Nunito:wght@200&display=swap");
+#About {
+  margin: 0rem 3rem 1rem 3rem;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-header {
+  font-family: "Lora", "sans";
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+}
+.about-subheader, .about-texts {
+  font-family: 'Lora', 'sans';
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffff;
+}
+
+
+
+@media screen and (max-width: 769px) {
+    .about-subheader, .about-texts{
+        text-align: justify;
+        margin-top: .8rem;
+        font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .about-subheader{
+        display: none;
+        
+    }
+}
