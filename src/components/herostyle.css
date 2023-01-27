@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&display=swap');
 
 
-section{
+#hero--section{
     background: rgba(0, 0, 0, 0.8);
-    margin: 2rem 3rem;
+    margin: 2rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: column;
 }
 #hero{
     display: flex;
+    /* background: rgba(0, 0, 0, 0.8); */
     justify-content: space-between;
     padding: 2rem .5rem;
 }
 .hero-text{
-    font-family: 'Lora';
+    font-family: 'Lora', 'sans';
     font-weight: '200';
     font-size: 15px;
     color: #FFFFFF;
@@ -44,8 +45,8 @@ section{
 }
 
 @media screen and (max-width: 769px) {
-    section{
-        margin: 2rem 0;
+    #hero--section{
+    margin: 2rem 0;
     }
     #hero{
         display: flex;
@@ -65,6 +66,9 @@ section{
     }
   }
   @media screen and (max-width: 640px) {
+    #hero--section{
+        margin: 2rem 1rem;
+        }
     #register-1{
        display: none;
     }

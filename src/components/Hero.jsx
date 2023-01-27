@@ -5,7 +5,7 @@ import hero from "./images/heroimg.png";
 export default function Hero() {
   return (
     <div>
-      <section>
+      <section id="hero--section">
         <div id="hero">
           <div className="hero-text">
             <h1>

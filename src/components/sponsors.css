@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&family=Nunito:wght@200&display=swap');
+#sponsors--section{
+    /* background: red; */
+    margin: 0rem 3rem 1rem 3rem;
+}
+#sponsor--text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'lora', 'sans';
+    color: #FFFFFF;
+}
+.sponsor-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+    #sponsors--section{
+        margin: 2rem 0;
+    }
+    .sponsor-icon > img{
+        width: 60px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+   
+}
+  
