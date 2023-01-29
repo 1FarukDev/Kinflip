@@ -26,6 +26,7 @@ export default function Hero({timerDays, timerHours, timerMinutes, timerSeconds}
           </div>
           <div id="attendee2">Register For Free</div>
           <div className="hero-countdown">
+            <div className="yellow conference-text"><h4>FFI CONFERENCE</h4></div>
             <section className="timer-container">
                 <section className="timer">
                   <div className="clock">
@@ -59,9 +60,9 @@ export default function Hero({timerDays, timerHours, timerMinutes, timerSeconds}
   );
 }
 
-Hero.defaultProps={
-  timerDays:10,
-  timerHours:10,
-  timerMinutes:10,
-  timerSeconds:10,
-}
+// Hero.defaultProps={
+//   timerDays:10,
+//   timerHours:10,
+//   timerMinutes:10,
+//   timerSeconds:10,
+// }

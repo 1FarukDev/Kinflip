@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&family=Nunito:wght@200&display=swap");
 #About {
-  margin: 0rem 3rem 1rem 3rem;
+  margin: 0rem 3rem 0rem 3rem;
 }
 .about-text {
   display: flex;
@@ -42,6 +42,14 @@
 p{
   color: #FFFFFF;
 }
+.speaker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 1.5rem;
+}
 
 @media screen and (max-width: 769px) {
     .about-subheader, .about-texts{
@@ -66,5 +74,7 @@ p{
       grid-column-gap: 6rem;
       padding: .5rem 1.5rem ;
     }
-    
+    .speaker h4{
+      font-size: 13px;
+    }
 }

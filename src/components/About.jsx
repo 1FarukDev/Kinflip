@@ -29,9 +29,10 @@ export default function About() {
         <div className="speakers"><div className="speakers-number">500</div><p>Attendees</p></div>
         <div className="speakers"><div className="speakers-number">10</div><p>Courses</p></div>
         <div className="speakers"><div className="speakers-number">7</div><p>Sessions</p></div>
-        {/* <div className="attendees">safdasf</div>
-        <div className="courses">fsdafaf</div>
-        <div className="sesssions">dafda</div> */}
+      </div>
+      <div className="speaker">
+        <h3>Speakers</h3>
+        <h4>We couldn't be more excited of our line up....</h4>
       </div>
     </article>
   );
