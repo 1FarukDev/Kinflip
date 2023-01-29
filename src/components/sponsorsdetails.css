@@ -1,0 +1,21 @@
+#sponsor-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.sponsor-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+}
+
+@media screen and (max-width: 769px) {
+   
+  }
+  @media screen and (max-width: 640px) {
+    
+}

@@ -1,9 +1,9 @@
 import React from "react";
 import "./sponsors.css";
-import Dior from './images/sponsors-logo/Dior.png'
-import versace from './images/sponsors-logo/versace.png'
-import Gucci from './images/sponsors-logo/Gucci.png'
-import channel from './images/sponsors-logo/channel.png'
+import Dior from './images/Dior.png'
+import versace from './images/versace.png'
+import Gucci from './images/Gucci.png'
+import channel from './images/channel.png'
 
 export default function Sponsors() {
   return (

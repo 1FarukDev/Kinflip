@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "./navbarStyles.css";
-import kin from './images/kinmain.png'
+import kin from './images/kinflip.png'
 import { FaFacebookF, FaInstagram, FaGithub, FaTwitter, FaLinkedin,FaPinterest } from "react-icons/fa";
 
 class Navbar extends Component {

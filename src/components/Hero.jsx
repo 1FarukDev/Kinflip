@@ -1,8 +1,8 @@
 import React from "react";
 import "./herostyle.css";
-import heroimg from "./images/Hero/heroimage.png";
-import hero from "./images/heroimg.png";
-export default function Hero() {
+import heroimg from "./images/heroimage.png";
+import hero from "./images/hero.png";
+export default function Hero({timerDays, timerHours, timerMinutes, timerSeconds}) {
   return (
     <div>
       <section id="hero--section">
@@ -26,7 +26,29 @@ export default function Hero() {
           </div>
           <div id="attendee2">Register For Free</div>
           <div className="hero-countdown">
-            <img src={hero} alt="" />
+            <section className="timer-container">
+                <section className="timer">
+                  <div className="clock">
+                    <section>
+                      <p>{timerDays}</p>
+                      <small>Days</small>
+                    </section><span>:</span>
+                    <section>
+                      <p>{timerHours}</p>
+                      <small>Hours</small>
+                    </section><span>:</span>
+                    <section>
+                      <p>{timerMinutes}</p>
+                      <small>Minutes</small>
+                    </section><span>:</span>
+                    <section>
+                      <p>{timerSeconds}</p>
+                      <small>Seconds</small>
+                    </section>
+                  </div>
+                </section>
+            </section>
+            {/* <img src={hero} alt="" /> */}
           </div>
         </div>
         <div className="heroimg">
@@ -35,4 +57,11 @@ export default function Hero() {
       </section>
     </div>
   );
+}
+
+Hero.defaultProps={
+  timerDays:10,
+  timerHours:10,
+  timerMinutes:10,
+  timerSeconds:10,
 }

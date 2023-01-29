@@ -5,28 +5,69 @@ import Sponsors from "./components/sponsors";
 import About from "./components/About";
 import Sponsorsdetails from "./components/Sponsordetails";
 import Data from "./Data";
-
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [timerDays, setTimerDays] = useState();
+  const [timerHours, setTimerHours] = useState();
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
+
+  let interval;
+
+  const startTimer =() => {
+    const countDownDate = new Date ("May 1, 2023").getTime();
+    interval = setInterval(()=>{
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (24 * 60 *60 * 1000)
+      );
+      const hours = Math.floor(distance % (24 * 60 *60 * 1000)/(1000*60*60)
+      );
+      const minutes = Math.floor(distance % (60 *60 * 1000)/(1000*60)
+      );
+      const seconds = Math.floor(distance % (60 * 1000)/(1000)
+      );
+
+      if (distance < 0){
+        // Stop Timer
+        clearInterval(interval.current);
+      }else{
+        // Update the Timer
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    })
+  }
   // console.log(Data)
-  const Details = Data.map(item => {
-    return(
-      <Sponsorsdetails 
-        coverImg = {item.image}
-        name = {item.name}
-        founder = {item.Founder}
+  const Details = Data.map((item) => {
+    return (
+      <Sponsorsdetails
+        coverImg={item.Image}
+        name={item.name}
+        founder={item.Founder}
       />
-    )
-  
+    );
+  });
+  useEffect(() => {
+    startTimer();
   })
-   
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero
+        timerDays={timerDays}
+        timerHours={timerHours}
+        timerMinutes={timerMinutes}
+        timerSeconds={timerSeconds}
+      />
       <Sponsors />
       <About />
-      { Details}
+      <div id="sponsor-details">{Details}</div>
     </div>
   );
 }

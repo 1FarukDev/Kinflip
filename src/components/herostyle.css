@@ -2,7 +2,7 @@
 
 
 #hero--section{
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
     margin: 2rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,28 @@
 #attendee2{
     display: none;
 }
+.clock{
+    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+.clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.clock section p{
+    font-size: 3rem;
+}
 
+.clock section small{
+    color: silver;
+}
 @media screen and (max-width: 769px) {
     #hero--section{
     margin: 2rem 0;
