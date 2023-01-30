@@ -5,8 +5,8 @@ import Sponsors from "./components/sponsors";
 import About from "./components/About";
 import Sponsorsdetails from "./components/Sponsordetails";
 import Data from "./Data";
-import React, { useState, useEffect } from "react";
 import Gallery from "./components/gallery";
+import React, { useState, useEffect } from "react";
 
 function App() {
   const [timerDays, setTimerDays] = useState();
