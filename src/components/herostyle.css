@@ -1,121 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&display=swap");
 
+#hero--section {
+  background: rgba(0, 0, 0, 0.8);
+  margin: 2rem 3rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#hero {
+  display: flex;
+  /* background: rgba(0, 0, 0, 0.8); */
+  justify-content: space-between;
+  padding: 2rem 0.5rem;
+}
+.hero-text {
+  font-family: "Lora", "sans";
+  font-weight: "200";
+  font-size: 15px;
+  color: #ffffff;
+  width: 50%;
+}
+.yellow {
+  color: #ffbc01;
+}
+#register-1 {
+  display: flex;
+  margin-top: 1rem;
+}
+.heroimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroimage {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#attendee2 {
+  display: none;
+}
+.clock {
+  /* background: rgb(50, 50, 129); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 1rem; */
+}
+.clock section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.clock section p {
+  font-size: 2rem;
+}
 
-#hero--section{
-    background: rgba(0, 0, 0, 0.8);
-    margin: 2rem 3rem 1rem 3rem;
-    display: flex;
-    flex-direction: column;
+.clock section small {
+  color: silver;
 }
-#hero{
-    display: flex;
-    /* background: rgba(0, 0, 0, 0.8); */
-    justify-content: space-between;
-    padding: 2rem .5rem;
+.days {
+  background: rgba(18, 39, 64, 1);
+  padding-right: 0.5rem;
 }
-.hero-text{
-    font-family: 'Lora', 'sans';
-    font-weight: '200';
-    font-size: 15px;
-    color: #FFFFFF;
-    width: 50%;
-}
-.yellow{
-    color: #ffbc01;
-}
-#register-1{
-    display: flex;
-    margin-top: 1rem;
-}
-.heroimg{
-    display: flex;
-    justify-content: center;
-    align-items: center; display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.heroimage{
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#attendee2{
-    display: none;
-}
-.clock{
-    background: rgb(50, 50, 129);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* padding-left: 1rem; */
-}
-.clock section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
-}
-.clock section p{
-    font-size: 2rem;
-}
-
-.clock section small{
-    color: silver;
-}
-.conference-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+.conference-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lora', 'sans';
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 @media screen and (max-width: 769px) {
-    #hero--section{
+  #hero--section {
     margin: 2rem 0;
-    }
-    #hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem .5rem;
-    }
-    .hero-text{
-        text-align: center;
-        width: 70%;
-    }
-    #register-1{
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
   }
-  @media screen and (max-width: 640px) {
-    #hero--section{
-        margin: 2rem 1rem;
-        }
-    #register-1{
-       display: none;
-    }
-     .hero-text{
-        text-align: center;
-        width: 90%;
-    }
-    #attendee2{
-        display: block;
-        background: #ffbc01;
-        padding: 1rem;
-        border-radius: 4px;
-        margin: 2rem 0;
-        font-style: normal;
-        font-family: 'Lora';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        color: #FFFFFF;
-
-    }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
   }
-  
+  .hero-text {
+    text-align: center;
+    width: 70%;
+  }
+  #register-1 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  #hero--section {
+    margin: 2rem 1rem;
+  }
+  #register-1 {
+    display: none;
+  }
+  .hero-text {
+    text-align: center;
+    width: 90%;
+  }
+  #attendee2 {
+    display: block;
+    background: #ffbc01;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+    font-style: normal;
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+}

@@ -30,19 +30,19 @@ export default function Hero({timerDays, timerHours, timerMinutes, timerSeconds}
             <section className="timer-container">
                 <section className="timer">
                   <div className="clock">
-                    <section>
+                    <section className="days">
                       <p>{timerDays}</p>
                       <small>Days</small>
                     </section><span>:</span>
-                    <section>
+                    <section className="days">
                       <p>{timerHours}</p>
                       <small>Hours</small>
                     </section><span>:</span>
-                    <section>
+                    <section className="days">
                       <p>{timerMinutes}</p>
                       <small>Minutes</small>
                     </section><span>:</span>
-                    <section>
+                    <section className="days">
                       <p>{timerSeconds}</p>
                       <small>Seconds</small>
                     </section>
