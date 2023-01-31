@@ -5,6 +5,7 @@
   margin: 2rem 3rem 1rem 3rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 #hero {
   display: flex;

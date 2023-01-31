@@ -2,6 +2,7 @@
 #sponsors--section{
     /* background: red; */
     padding: 0rem 1.5rem 1rem 1.5rem;
+    overflow: hidden;
 }
 #sponsor--text{
     display: flex;

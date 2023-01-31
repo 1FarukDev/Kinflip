@@ -17,6 +17,14 @@ import ipad5 from './images/ipad5.png'
 import ipad6 from './images/ipad6.png'
 import ipad7 from './images/ipad7.png'
 import ipad8 from './images/ipad8.png'
+import mobile1 from './images/mobile-images/mobile1.png'
+import mobile2 from './images/mobile-images/mobile2.png'
+import mobile3 from './images/mobile-images/mobile3.png'
+import mobile4 from './images/mobile-images/mobile4.png'
+import mobile5 from './images/mobile-images/mobile5.png'
+import mobile6 from './images/mobile-images/mobile6.png'
+import mobile7 from './images/mobile-images/mobile7.png'
+import mobile8 from './images/mobile-images/mobile8.png'
 export default function Gallery() {
   return (
     <section id="gallery">
@@ -43,6 +51,16 @@ export default function Gallery() {
                 <img src={ipad6} alt="gallery" className="ipad6"/>
                 <img src={ipad7} alt="gallery" className="ipad7"/>
                 <img src={ipad8} alt="gallery" className="ipad8"/>
+      </div>
+      <div className="gallery-image-mobile">
+                <img src={mobile1} alt="gallery" className="mobile1"/>
+                <img src={mobile2} alt="gallery" className="mobile2"/>
+                <img src={mobile3} alt="gallery" className="mobile3"/>
+                <img src={mobile4} alt="gallery" className="mobile4"/>
+                <img src={mobile5} alt="gallery" className="mobile5"/>
+                <img src={mobile6} alt="gallery" className="mobile6"/>
+                <img src={mobile7} alt="gallery" className="mobile7"/>
+                <img src={mobile8} alt="gallery" className="mobile8"/>
       </div>
           <section id="show-more">Show More <span className="arrow"><FaArrowRight /></span></section>
     </section>

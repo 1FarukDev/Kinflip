@@ -1,9 +1,10 @@
 .App {
   text-align: center;
-  overflow: hidden;
+  overflow-x : hidden;
 }
 body{
   background: #1e1b1b;
+  overflow-x: hidden;
 }
 .App-logo {
   height: 40vmin;

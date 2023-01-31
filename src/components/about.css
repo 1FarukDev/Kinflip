@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:wght@400;500;600;700&family=Nunito:wght@200&display=swap");
 #About {
   margin: 0rem 3rem 0rem 3rem;
+  overflow: hidden;
 }
 .about-text {
   display: flex;
