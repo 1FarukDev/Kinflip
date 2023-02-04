@@ -62,7 +62,7 @@ export default function Gallery() {
                 <img src={mobile7} alt="gallery" className="mobile7"/>
                 <img src={mobile8} alt="gallery" className="mobile8"/>
       </div>
-          <section id="show-more">Show More <span className="arrow"><FaArrowRight /></span></section>
+          <a href="#"><section id="show-more">Show More <span className="arrow"><FaArrowRight /></span></section></a>
     </section>
   );
 }

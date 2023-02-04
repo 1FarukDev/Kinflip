@@ -5,6 +5,7 @@ import Sponsors from "./components/sponsors";
 import About from "./components/About";
 import Sponsorsdetails from "./components/Sponsordetails";
 import Data from "./Data";
+import Nominees from './components/nominees'
 import Gallery from "./components/gallery";
 import React, { useState, useEffect } from "react";
 
@@ -70,6 +71,7 @@ function App() {
       <About />
       <div id="sponsor-details">{Details}</div>
       <Gallery />
+      <Nominees />
     </div>
     
   );
