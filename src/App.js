@@ -7,6 +7,7 @@ import Sponsorsdetails from "./components/Sponsordetails";
 import Data from "./Data";
 import Nominees from './components/nominees'
 import Gallery from "./components/gallery";
+import nomineesData from './nomineesData'
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -58,6 +59,16 @@ function App() {
   useEffect(() => {
     startTimer();
   })
+  // console.log(nomineesData)
+  const nomineesDetails =nomineesData.map((nominees =>{
+    return(
+      <Nominees 
+        img = {nominees.Image}
+        title = {nominees.title}
+        text = {nominees.Text}
+      />
+    )
+  }))
   return (
     <div>
       <Navbar />
@@ -71,7 +82,7 @@ function App() {
       <About />
       <div id="sponsor-details">{Details}</div>
       <Gallery />
-      <Nominees />
+      {nomineesDetails}
     </div>
     
   );
