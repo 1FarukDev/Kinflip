@@ -5,9 +5,9 @@ import Sponsors from "./components/sponsors";
 import About from "./components/About";
 import Sponsorsdetails from "./components/Sponsordetails";
 import Data from "./Data";
-import Nominees from './components/nominees'
+import Nominees from "./components/nominees";
 import Gallery from "./components/gallery";
-import nomineesData from './nomineesData'
+import nomineesData from "./nomineesData";
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -18,34 +18,32 @@ function App() {
 
   let interval;
 
-  const startTimer =() => {
-    const countDownDate = new Date ("May 1, 2023").getTime();
-    interval = setInterval(()=>{
+  const startTimer = () => {
+    const countDownDate = new Date("May 1, 2023").getTime();
+    interval = setInterval(() => {
       const now = new Date().getTime();
 
       const distance = countDownDate - now;
 
-      const days = Math.floor(distance / (24 * 60 *60 * 1000)
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
       );
-      const hours = Math.floor(distance % (24 * 60 *60 * 1000)/(1000*60*60)
-      );
-      const minutes = Math.floor(distance % (60 *60 * 1000)/(1000*60)
-      );
-      const seconds = Math.floor(distance % (60 * 1000)/(1000)
-      );
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
 
-      if (distance < 0){
+      if (distance < 0) {
         // Stop Timer
         clearInterval(interval.current);
-      }else{
+      } else {
         // Update the Timer
         setTimerDays(days);
         setTimerHours(hours);
         setTimerMinutes(minutes);
         setTimerSeconds(seconds);
       }
-    })
-  }
+    });
+  };
   // console.log(Data)
   const Details = Data.map((item) => {
     return (
@@ -58,17 +56,17 @@ function App() {
   });
   useEffect(() => {
     startTimer();
-  })
+  });
   // console.log(nomineesData)
-  const nomineesDetails =nomineesData.map((nominees =>{
-    return(
-      <Nominees 
-        img = {nominees.Image}
-        title = {nominees.title}
-        text = {nominees.Text}
+  const nomineesDetails = nomineesData.map((nominees) => {
+    return (
+      <Nominees
+        img={nominees.Image}
+        title={nominees.title}
+        text={nominees.Text}
       />
-    )
-  }))
+    );
+  });
   return (
     <div>
       <Navbar />
@@ -82,9 +80,8 @@ function App() {
       <About />
       <div id="sponsor-details">{Details}</div>
       <Gallery />
-      {nomineesDetails}
+      <div id="nomineesDetails">{nomineesDetails}</div>
     </div>
-    
   );
 }
 

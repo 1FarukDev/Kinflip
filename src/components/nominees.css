@@ -1,4 +1,4 @@
-#nominees {
+/* #nominees {
   margin: 0rem 3rem 0rem 3rem;
   display: flex;
   flex-direction: column;
@@ -34,4 +34,86 @@ a {
     background: none;
     border: 1px solid rgba(255, 188, 1, 1);
     transition: .5s ease-in-out;
+} */
+
+.Nominees-card {
+  /* margin: 0rem 3rem 0rem 3rem; */
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+#nomineesDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+h4 {
+  font-family: "Nunito", "sans";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+h3 {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.nomineesImage {
+  height: 232px;
+  width: 287px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 830px) {
+  
+}
+@media screen and (max-width: 769px) {
+  .Nominees-card{
+    margin: 1rem;
+  }
+  #nomineesDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+}
+@media screen and (max-width: 640px) {
+  .Nominees-card{
+    margin: .2rem;
+  }
+  #nomineesDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: .3rem; */
+    place-items: center;
+    /* margin: 1rem; */
+  }
+  h4 {
+    font-family: "Nunito", "sans";
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Nunito";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+  }
+  .nomineesImage {
+    height: 200px;
+    width: 178px;
+    border-radius: 4px;
+  }
+  
+}
+@media screen and (max-width: 415px){
 }
