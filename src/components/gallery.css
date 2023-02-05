@@ -99,12 +99,6 @@ a {
     border: 1px solid rgba(255, 188, 1, 1);
     transition: .5s ease-in-out;
 }
-/* font-family: "Nunito", "sans";
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center; */
 @media screen and (max-width: 830px) {
     #gallery {
       margin: 0;

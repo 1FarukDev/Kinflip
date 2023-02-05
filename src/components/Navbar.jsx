@@ -1,7 +1,14 @@
 import { Component } from "react";
 import "./navbarStyles.css";
-import kin from './images/kinflip.png'
-import { FaFacebookF, FaInstagram, FaGithub, FaTwitter, FaLinkedin,FaPinterest } from "react-icons/fa";
+import kin from "./images/kinflip.png";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaPinterest,
+} from "react-icons/fa";
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -26,69 +33,87 @@ class Navbar extends Component {
                 <input type="search" className="search" placeholder="Search for a Keyword...." /><div className="serach--icon"><i className="fa fa-search"></i></div>
               </div> */}
               <div id="search">
-                <div id="search-input"><input type="text" placeholder="Search for a keyword..."/></div>
-                <div id="search-icon"><i className="fa fa-search fa-lg"></i></div>
+                <div id="search-input">
+                  <input type="text" placeholder="Search for a keyword..." />
+                </div>
+                <div id="search-icon">
+                  <i className="fa fa-search fa-lg"></i>
+                </div>
               </div>
               <span className="mobile-links">
-              <li>
-                <a className="active" href="#">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-              <li>
-                <a href="#" className="news">Newsletter</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#" className="mission">Mission And Vision</a>
-              </li>
+                <li>
+                  <a className="active" href="#">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" className="news">
+                    Newsletter
+                  </a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#" className="mission">
+                    Mission And Vision
+                  </a>
+                </li>
               </span>
               <span className="desktop-links">
-              <li>
-                <a className="active" href="#">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              
+                <li>
+                  <a className="active" href="#">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
               </span>
-               <div id="socials">
+              <div id="socials">
                 <div className="social-icons">
-                  <div className="instagram"><FaFacebookF /></div>
-                  <div className="instagram"><FaTwitter /></div>
-                  <div className="instagram"><FaInstagram  /></div>
-                  <div className="instagram"><FaLinkedin  /></div>
-                  <div className="instagram"><FaPinterest  /></div>
+                  <div className="instagram">
+                    <FaFacebookF />
+                  </div>
+                  <div className="instagram">
+                    <FaTwitter />
+                  </div>
+                  <div className="instagram">
+                    <FaInstagram />
+                  </div>
+                  <div className="instagram">
+                    <FaLinkedin />
+                  </div>
+                  <div className="instagram">
+                    <FaPinterest />
+                  </div>
                 </div>
-               </div>
+              </div>
             </ul>
             <div id="register">
               <div id="nav-attendee">Register As An Attendee</div>
               <div id="nav-speaker">Register As A Speaker</div>
             </div>
-            <div id="nav-register">Register
-            <select name="" id="">
-              <option value="">Register As An Attendee</option>
-              <option value="">Register As A Speaker</option>
-              
-              </select></div>
+            <div id="nav-register">
+              Register
+              <select name="" id="">
+                <option value="">Register As An Attendee</option>
+                <option value="">Register As A Speaker</option>
+              </select>
+            </div>
           </div>
         </div>
         <div id="mobile" onClick={this.handleClick}>

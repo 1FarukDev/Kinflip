@@ -8,6 +8,7 @@ import Data from "./Data";
 import Nominees from "./components/nominees";
 import Gallery from "./components/gallery";
 import nomineesData from "./nomineesData";
+import Faq from "./components/Faq";
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -68,7 +69,7 @@ function App() {
     );
   });
   return (
-    <div>
+    <>
       <Navbar />
       <Hero
         timerDays={timerDays}
@@ -81,7 +82,8 @@ function App() {
       <div id="sponsor-details">{Details}</div>
       <Gallery />
       <div id="nomineesDetails">{nomineesDetails}</div>
-    </div>
+      <Faq />
+    </>
   );
 }
 
