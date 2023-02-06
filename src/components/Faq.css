@@ -68,10 +68,11 @@
   color: rgba(255, 255, 255, 1);
 }
 .register---link{
-    background: yellow;
+    background: #ffbc01;
     padding: .5rem 1rem;
     color: black;
     border-radius: 4px;
+    display: none;
 }
 @media screen and (max-width: 769px) {
     
@@ -140,6 +141,9 @@
         text-align: left;
         padding: .5rem;
         color: rgba(255, 255, 255, 1);
+      }
+      .register---link{
+        display: block;
       }
       
   }

@@ -9,6 +9,7 @@ import Nominees from "./components/nominees";
 import Gallery from "./components/gallery";
 import nomineesData from "./nomineesData";
 import Faq from "./components/Faq";
+import Footer from "./components/footer";
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -83,6 +84,7 @@ function App() {
       <Gallery />
       <div id="nomineesDetails">{nomineesDetails}</div>
       <Faq />
+      <Footer />
     </>
   );
 }
