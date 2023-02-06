@@ -1,5 +1,13 @@
 import React from "react";
 import "./footer.css";
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaGithub,
+    FaTwitter,
+    FaLinkedin,
+    FaPinterest,
+  } from "react-icons/fa";
 import Kinflip from "./images/kinflip.png";
 function Footer() {
   return (
@@ -9,7 +17,9 @@ function Footer() {
         <div className="footer-contact">
           <article className="footer-details">
             <h5 className="footer-head">Contact Us</h5>
-            <h5 className="footer--text">Address: Obafemi Awolowo University, Ile Ife</h5>
+            <h5 className="footer--text">
+              Address: Obafemi Awolowo University, Ile Ife
+            </h5>
             <h5 className="footer--text">phone: +23490 12345678</h5>
             <h5 className="footer--text">Email: kinflipp@yahoo.com</h5>
           </article>
@@ -33,20 +43,40 @@ function Footer() {
           <article className="footer-details">
             <h5 className="footer-head ">Subscribe to our newsletter</h5>
             <h5 className="footer--text">
-              Subscribe to our newsletter to get <br /> updates about the upcoming
-              conference
+              Subscribe to our newsletter to get <br /> updates about the
+              upcoming conference
             </h5>
-           <div className="newsletter">
-                <input type="text" placeholder="Enter Email" />
-                <div className="subscribe">Subscribe</div>
-           </div>
+            <div className="newsletter">
+              <input type="text" placeholder="Enter Email" />
+              <div className="subscribe">Subscribe</div>
+            </div>
           </article>
         </div>
       </div>
       <hr />
       <div className="footer-copy">
-        <div className="copy-text">akdnfdn</div>
-        <div className="copy-icon">dncsbfd</div>
+        <div className="copy-text">Copyright 2022 | All Rights Reserved</div>
+        <div className="copy-icon">
+          <div id="footer-socials">
+            <div className="social-icons">
+              <div className="icons">
+                <FaFacebookF />
+              </div>
+              <div className="icons">
+                <FaTwitter />
+              </div>
+              <div className="icons">
+                <FaInstagram />
+              </div>
+              <div className="icons">
+                <FaLinkedin />
+              </div>
+              <div className="icons">
+                <FaPinterest />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

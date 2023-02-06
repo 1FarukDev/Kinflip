@@ -57,3 +57,10 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+.social-icons{
+    display: flex;
+    /* padding-right: .5rem; */
+}
+.icons{
+    padding-right: .5rem;
+}
