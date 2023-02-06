@@ -3,7 +3,6 @@ import "./footer.css";
 import {
     FaFacebookF,
     FaInstagram,
-    FaGithub,
     FaTwitter,
     FaLinkedin,
     FaPinterest,
