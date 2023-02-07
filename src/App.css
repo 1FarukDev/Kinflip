@@ -1,15 +1,10 @@
 .App {
   text-align: center;
-  overflow-x : hidden;
+  overflow-x: hidden;
 }
-body{
+body {
   background: #1e1b1b;
   overflow-x: hidden;
-  position: absolute;
-  top: 200%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 50%;
 }
 .App-logo {
   height: 40vmin;
@@ -19,6 +14,21 @@ body{
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media screen and (min-width: 1500px) {
+  body{
+    background: #ffbc01;
+  }
+  main {
+    /* background: black; */
+    background: #1e1b1b;
+    
+    position: absolute;
+    top: 340%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
   }
 }
 

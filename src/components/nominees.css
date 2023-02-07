@@ -1,41 +1,3 @@
-/* #nominees {
-  margin: 0rem 3rem 0rem 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ffff;
-}
-.nominees-text {
-  margin-top: 2rem;
-  font-family: "Lora", "sans";
-  font-size: 28px;
-  font-weight: 600;
-}
-.nominees--text {
-  font-family: "Lora";
-  font-size: 20px;
-  font-weight: 400;
-}
-a {
-  text-decoration: none;
-}
-.vote {
-  margin-top: 1rem;
-  background: rgba(255, 188, 1, 1);
-  padding: 0.5rem 3rem;
-  border-radius: 4px;
-  color: #ffff;
-  font-family: 'Lora';
-  font-size: 18px;
-  font-weight: 500;
-}
-.vote:hover{
-    background: none;
-    border: 1px solid rgba(255, 188, 1, 1);
-    transition: .5s ease-in-out;
-} */
-
 .Nominees-card {
   /* margin: 0rem 3rem 0rem 3rem; */
   background: white;
@@ -43,8 +5,12 @@ a {
   margin-bottom: 1rem;
 }
 #nomineesDetails {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  /* grid-template-columns: repeat(4, 1fr); */
   place-items: center;
 }
 h4 {

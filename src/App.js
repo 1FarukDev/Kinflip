@@ -70,7 +70,7 @@ function App() {
     );
   });
   return (
-    <>
+    <main>
       <Navbar />
       <Hero
         timerDays={timerDays}
@@ -85,7 +85,7 @@ function App() {
       <div id="nomineesDetails">{nomineesDetails}</div>
       <Faq />
       <Footer />
-    </>
+    </main>
   );
 }
 
