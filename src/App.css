@@ -5,6 +5,11 @@
 body{
   background: #1e1b1b;
   overflow-x: hidden;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
 }
 .App-logo {
   height: 40vmin;

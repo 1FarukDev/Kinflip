@@ -8,7 +8,9 @@ import {
     FaPinterest,
   } from "react-icons/fa";
 import Kinflip from "./images/kinflip.png";
+import Register from "./register";
 function Footer() {
+ 
   return (
     <section id="footer">
       <img src={Kinflip} alt="KinFlip Logo" width={150} />
@@ -46,7 +48,7 @@ function Footer() {
               upcoming conference
             </h5>
             <div className="newsletter">
-              <input type="text" placeholder="Enter Email" />
+              <input type="text" placeholder="Enter Email" className="footer--input"/>
               <div className="subscribe">Subscribe</div>
             </div>
           </article>

@@ -10,8 +10,8 @@
 .footer-details {
   padding: auto;
 }
-.footer-contact-text {
-  text-align: center;
+.footer-contact {
+  /* border: 1px solid white; */
 }
 .newsletter {
   display: flex;
@@ -20,7 +20,7 @@
   width: 80%;
   margin: 1rem 0;
 }
-input {
+.footer--input {
   border: none;
   background: rgba(255, 255, 255, 1);
   padding: 0.5rem;
@@ -58,7 +58,7 @@ hr {
   justify-content: space-between;
   color: #ffffff;
   margin: 0.5rem 2rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
@@ -74,44 +74,61 @@ hr {
 }
 
 @media screen and (max-width: 769px) {
-    
-   
+  .footer--section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  @media screen and (max-width: 640px) {
-    .footer--section {
-        display: block;
-        justify-content: space-between;
-      }
-      .footer--text {
-        font-family: "Nunito";
-        font-size: 20px;
-        font-weight: 200;
-        line-height: 28px;
-        color: rgb(239, 237, 232);
-      }
-      .footer-head {
-        font-family: "Nunito";
-        font-size: 22px;
-        font-weight: 400;
 
-      }
-      #footer {
-        margin: 2rem 3rem 0rem 3rem;
-      }
-      .newsletter{
-        display: none;
-      }
-      .footer-copy {
-        display: block;
-        text-align: center;
-        align-items: center;
-        color: #ffffff;
-        margin: 0.5rem 0rem;
-        font-family: 'Nunito';
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 27px;
-        letter-spacing: 0px;
-        text-align: center;
-      }
+  .footer-copy {
+    margin: 0.5rem 0rem;
+    font-weight: 200;
+  }
+  .footer-contact {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer--section {
+    display: block;
+    justify-content: space-between;
+  }
+  .footer--text {
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 28px;
+    color: rgb(239, 237, 232);
+  }
+  .footer-head {
+    font-family: "Nunito";
+    font-size: 22px;
+    font-weight: 400;
+  }
+  #footer {
+    margin: 2rem 1rem 0rem 1rem;
+  }
+  .newsletter {
+    display: none;
+  }
+  .footer-copy {
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 0.5rem 0rem;
+    font-family: "Nunito";
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* padding-right: .5rem; */
+  }
 }
