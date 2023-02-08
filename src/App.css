@@ -25,10 +25,17 @@ body {
     background: #1e1b1b;
     
     position: absolute;
-    top: 340%;
+    top: 320%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
+  }
+  #nomineesDetails {
+    display: grid;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
   }
 }
 
