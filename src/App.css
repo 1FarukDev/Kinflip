@@ -21,9 +21,7 @@ body {
     background: #ffbc01;
   }
   main {
-    /* background: black; */
     background: #1e1b1b;
-    
     position: absolute;
     top: 320%;
     left: 50%;
@@ -34,9 +32,12 @@ body {
     display: grid;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 1rem;
   }
+ .gallery-image{
+  /* border: 1px solid red; */
+  margin:2rem 10rem;
+ }
 }
 
 .App-header {

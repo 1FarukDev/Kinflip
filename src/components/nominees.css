@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 80%; */
   /* padding: .5rem; */
   /* grid-template-columns: repeat(4, 1fr); */
   /* place-items: center; */
@@ -57,10 +57,12 @@ h3 {
   }
   #nomineesDetails {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* gap: .3rem; */
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: .1rem;
     place-items: center;
-    /* margin: 1rem; */
+    overflow-x: hidden;
+    /* margin: 1rem;*/
   }
   h4 {
     font-family: "Nunito", "sans";
