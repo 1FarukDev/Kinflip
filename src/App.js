@@ -66,6 +66,7 @@ function App() {
         img={nominees.Image}
         title={nominees.title}
         text={nominees.Text}
+        style = {{padding:10}}
       />
     );
   });

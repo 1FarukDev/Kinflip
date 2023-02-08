@@ -40,6 +40,7 @@ h3 {
 @media screen and (max-width: 769px) {
   .Nominees-card{
     margin: 1rem;
+    padding: 1rem;
   }
   #nomineesDetails {
     display: flex;
