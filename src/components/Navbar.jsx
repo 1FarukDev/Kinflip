@@ -1,6 +1,7 @@
 import { Component } from "react";
 import "./navbarStyles.css";
 import kin from "./images/kinflip.png";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -42,45 +43,47 @@ class Navbar extends Component {
               </div>
               <span className="mobile-links">
                 <li>
-                  <a className="active" href="#">
+                  <NavLink to='' className="active" >
                     Home
-                  </a>
+                  </NavLink >
                 </li>
                 <li>
-                  <a href="#">FAQ</a>
+                  <NavLink  to='/faq'>FAQ</NavLink >
+                  
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <NavLink  to=''>Contact Us</NavLink >
                 </li>
                 <li>
-                  <a href="#" className="news">
+                  <NavLink  to='' className="news">
                     Newsletter
-                  </a>
+                  </NavLink >
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <NavLink  to=''>About Us</NavLink >
                 </li>
                 <li>
-                  <a href="#" className="mission">
+                  <NavLink  to='' className="mission">
                     Mission And Vision
-                  </a>
+                  </NavLink >
                 </li>
               </span>
               <span className="desktop-links">
                 <li>
-                  <a className="active" href="#">
+                  <NavLink  className="active" to=''>
                     Home
-                  </a>
+                  </NavLink >
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <NavLink  to=''>Contact Us</NavLink >
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <NavLink  to=''>About Us</NavLink >
                 </li>
 
                 <li>
-                  <a href="#">FAQ</a>
+                  <NavLink  to='/faq'>FAQ</NavLink >
+                  {/* <link to="/Faq">FAQ</link> */}
                 </li>
               </span>
               <div id="socials">

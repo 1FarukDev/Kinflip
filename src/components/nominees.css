@@ -5,14 +5,14 @@
   margin-bottom: 1rem;
 }
 #nomineesDetails {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   /* width: 80%; */
   /* padding: .5rem; */
-  /* grid-template-columns: repeat(4, 1fr); */
-  /* place-items: center; */
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
 }
 h4 {
   font-family: "Nunito", "sans";
