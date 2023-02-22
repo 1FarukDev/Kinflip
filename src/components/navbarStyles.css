@@ -35,6 +35,13 @@ nav {
 #navbar li a:hover {
   color: #ffbc01;
 }
+.link {
+  color: var(--grey-500);
+}
+
+.active {
+  color: var(--primary-500);
+}s
 #logo {
   display: flex;
   align-items: center;

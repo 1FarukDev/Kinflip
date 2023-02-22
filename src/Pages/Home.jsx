@@ -1,17 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero";
-// import Hero from "./components/Hero";
 import Sponsors from "../components/sponsors";
 import About from "../components/About";
-// import Sponsorsdetails from "./components/Sponsordetails";
 import Sponsorsdetails from "../components/Sponsordetails";
 import Data from "../Data";
 import Nominees from "../components/nominees";
 import Gallery from "../components/gallery";
 import nomineesData from "../nomineesData";
-// import Faq from "../components/Faq";
-import { Link } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Faq from "../components/Faq";
 const Home = () => {

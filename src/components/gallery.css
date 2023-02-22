@@ -4,6 +4,13 @@
   padding: 0;
   width: auto;
   overflow: hidden;
+  /* border: 1px solid red; */
+  /* width: 90%; */
+  /* padding: 5rem; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .gallery-text{
     margin-top: 3em;

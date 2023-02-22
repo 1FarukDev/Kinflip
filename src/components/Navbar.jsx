@@ -70,19 +70,28 @@ class Navbar extends Component {
               </span>
               <span className="desktop-links">
                 <li>
-                  <NavLink  className="active" to=''>
+                  <NavLink  className={({isActive}) => (isActive ? 'active' : 'link')} to=''>
                     Home
                   </NavLink >
                 </li>
                 <li>
-                  <NavLink  to=''>Contact Us</NavLink >
+                  <NavLink  to='' 
+
+                  className={({isActive}) => (isActive ? 'active' : 'link')}
+                  
+                  >Contact Us</NavLink >
                 </li>
                 <li>
-                  <NavLink  to=''>About Us</NavLink >
+                  <NavLink  to='' 
+                  className={({isActive}) => (isActive ? 'active' : 'link')}>
+                    
+                    About Us</NavLink >
                 </li>
 
                 <li>
-                  <NavLink  to='/faq'>FAQ</NavLink >
+                  <NavLink  to='/faq' 
+                  className={({isActive}) => (isActive ? 'active' : 'link')}>
+                    FAQ</NavLink >
                   {/* <link to="/Faq">FAQ</link> */}
                 </li>
               </span>

@@ -19,11 +19,12 @@ body {
 @media screen and (min-width: 1500px) {
   body{
     background: #ffbc01;
+    /* position: relative; */
   }
   main {
     background: #1e1b1b;
     position: absolute;
-    top: 320%;
+    top: 630%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
