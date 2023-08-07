@@ -17,28 +17,20 @@ body {
   }
 }
 @media screen and (min-width: 1500px) {
-  body{
-    background: #ffbc01;
-    /* position: relative; */
-  }
-  main {
-    background: #1e1b1b;
-    position: absolute;
-    top: 630%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-  }
+  /* main {
+    margin: 0;
+    padding: 0 20px;
+  } */
   #nomineesDetails {
     display: grid;
     gap: 1rem;
     flex-wrap: wrap;
     padding: 1rem;
   }
- .gallery-image{
-  /* border: 1px solid red; */
-  margin:2rem 10rem;
- }
+  .gallery-image {
+    /* border: 1px solid red; */
+    margin: 2rem 10rem;
+  }
 }
 
 .App-header {

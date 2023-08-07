@@ -36,6 +36,10 @@ const Home = () => {
         if (distance < 0) {
           // Stop Timer
           clearInterval(interval.current);
+          setTimerDays(0)
+           setTimerHours(0);
+          setTimerMinutes(0);
+          setTimerSeconds(0);
         } else {
           // Update the Timer
           setTimerDays(days);
